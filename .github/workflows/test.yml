@@ -3,7 +3,11 @@ name: Run tests
 on:
   push:
     branches:
-      - CI_workflow
+      - main
+  
+  pull_request:
+    branches:
+      - main
 
 jobs:
   test:
